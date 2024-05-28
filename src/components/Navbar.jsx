@@ -1,14 +1,16 @@
+import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <div className=" navbar h-[5rem]  flex items-center justify-between px-20 bg-slate-300 shadow ">
+    <div className=" w-[154vh] mx-auto navbar sticky  h-[3rem]  flex items-center justify-between px-6 bg-[#ffebbb] shadow-lg rounded-md">
       <div>
-        <img className="w-24" src="./images/Logo.png" alt="" />
+        <img className="w-16" src="./images/Logo.png" alt="" />
       </div>
-      <ul className="flex gap-5 ">
+      {/* <ul className="flex gap-5 ">
         <li className="hover:text-black/65 cursor-pointer">Home</li>
         <li className="hover:text-black/65 cursor-pointer">About</li>
         <li className="hover:text-black/65 cursor-pointer">Contact</li>
-      </ul>
+      </ul> */}
+      <FaGithub className="cursor-pointer" size={"2rem"} />
     </div>
   );
 };
